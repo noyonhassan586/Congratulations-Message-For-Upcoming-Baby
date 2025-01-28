@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,13 +8,43 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <h3 class="acme-regular">Congratulations From <span>OO7</span></h3>
-    <div class="book">
-        <dotlottie-player src="https://lottie.host/bd1bd493-ce91-4f42-8f99-04067c05f35e/UwEP52dMNp.lottie"
-            background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+    <div class="book flex flex-col-reverse">
+        <button class="btn btn-success mt-6" onclick="my_modal_1.showModal()">See What OO7 Said</button>
+        <dialog id="my_modal_1" class="modal">
+            <div class="modal-box">
+                <h3 class="text-lg font-bold">Hi Dolphin!</h3>
+                <p class="py-4 text-base">অনেক অনেক অনেক শুভকামনা। আল্লাহ তোমাকে এমন সন্তান দিক যে তোমার চোখ প্রশান্ত
+                    করবে
+                    তোমার
+                    বৃদ্ধ বয়সে হাল ধরবে। অনেক অনেক অনেক দোয়া রইল।
+
+                    আরেকটা জিনিস, দেখ তোমার জন্য আমার মধ্যে কোন আবেগ কিছুই আর নাই। সেটা নষ্ট হয়ে গিয়েছে অনেক আগেই,
+                    বছরখানিক এর বেশি হয়ে গেছে আমি এসব দূরে রেখে চলে আসছি। আর সত্য হল আমি অগাস্ট ৬, ২০২৩ তোমার কাছে
+                    গিয়েছিলাম এটা জানার জন্য যে তোমার আমার জন্য কোন ফিলিংস আছে কিনা! কারণ আমার মনে হচ্ছিল আমার আর
+                    ফারিহার মাঝে তুমি বাধা হয়ে আছো। এরপর আর কি তুমি রাতে দেখা করা শুরু করলে আর আমিও ছিলাম ফারিহার জন্য
+                    একা-ক্লান্ত, পরবর্তীতে তোমার প্রতি আমার দুর্বলতা কাজ করা শুরু করলো, এভাবেই যা হইছে। তুমি অবশ্যই একটা
+                    জিনিস খেয়াল করেছো যে আমি কখনো তোমার সাথে ফারিহাকে নিয়ে আসতে নিষেধ করতাম এর কারণ এটা না যে আমি ওকে
+                    সহ্য করতে পারতাম না বরং ও ছিল আমার প্রথম ভালবাসা ওকে দেখে আমি অনেক দুর্বল হয়ে পড়তাম তাই। যাই হক আমি
+                    একটু ঝামেলায় ছিলাম তোমার মেসেজ দেখেছি কিন্তু সীন দিতে দেরি করেছি ভাবলাম তোমার এরকম মুহূর্তে শুধু
+                    একটা মেসেজ দিয়ে দিলেই হবে না তাই এটা বানানো যদিও আমি একটা প্রোজেক্ট এর কাজে ঝামেলায় ছিলাম। যাক গা
+                    ভালো থাকো। </p>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                    </form>
+                </div>
+            </div>
+        </dialog>
+        <dotlottie-player class="mt-5" src="https://lottie.host/bd1bd493-ce91-4f42-8f99-04067c05f35e/UwEP52dMNp.lottie"
+            background="transparent" speed="1" style="width: 230px; height: 230px" loop autoplay></dotlottie-player>
         <div class="cover">
             <dotlottie-player src="https://lottie.host/c27e3704-39be-484b-9e0e-bcf999c59418/YzVFRkeutD.lottie"
                 background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
